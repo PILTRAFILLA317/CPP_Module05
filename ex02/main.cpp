@@ -97,58 +97,59 @@ int main(){
 		std::cout << std::endl << e.what() << std::endl << std::endl;
 		std::cout << "\033[0;0m";
 	}
-	// std::cout << "\e[1;96m//////FITH TRY//////\033[0;0m" << std::endl;
-	// try{
-	// 	std::cout << "\033[0;1m" << std::endl;
-	// 	Bureaucrat mob("Pussy", 72);
-	// 	Bureaucrat psc("Shrink", 45);
-	// 	RobotomyRequestForm patient("Anthony Soprano");
-	// 	std::cout << patient << std::endl;
-	// 	patient.signForm(mob);
-	// 	std::cout <<  patient << std::endl;
-	// 	patient.execute(psc);
-	// 	std::cout << "\033[0;0m";
-	// 	std::cout << "\033[0;1m" << std::endl;
-	// }
-	// catch (std::exception &e){
-	// 	std::cout << "\e[1;91mERROR: ";
-	// 	std::cout << std::endl << e.what() << std::endl << std::endl;
-	// 	std::cout << "\033[0;0m";
-	// }
-	// std::cout << "\e[1;96m//////SIXTH TRY//////\033[0;0m" << std::endl;
-	// try{
-	// 	std::cout << "\033[0;1m" << std::endl;
-	// 	Bureaucrat mob2("Pussy", 72);
-	// 	Bureaucrat psc2("Shrink", 46);
-	// 	RobotomyRequestForm patient2("Anthony Soprano");
-	// 	std::cout << patient2 << std::endl;
-	// 	patient2.signForm(mob2);
-	// 	std::cout <<  patient2 << std::endl;
-	// 	patient2.execute(psc2);
-	// 	std::cout << "\033[0;0m";
-	// 	std::cout << "\033[0;1m" << std::endl;
-	// }
-	// catch (std::exception &e){
-	// 	std::cout << "\e[1;91mERROR: ";
-	// 	std::cout << std::endl << e.what() << std::endl << std::endl;
-	// 	std::cout << "\033[0;0m";
-	// }
-	// std::cout << "\e[1;96m//////SEVENTH TRY//////\033[0;0m" << std::endl;
-	// try{
-	// 	std::cout << "\033[0;1m" << std::endl;
-	// 	Bureaucrat mob3("Pussy", 72);
-	// 	Bureaucrat psc3("Shrink", 46);
-	// 	RobotomyRequestForm patient3("Anthony Soprano");
-	// 	std::cout << patient3 << std::endl;
-	// 	patient3.execute(psc3);
-	// 	std::cout <<  patient3 << std::endl;
-	// 	std::cout << "\033[0;0m";
-	// 	std::cout << "\033[0;1m" << std::endl;
-	// }
-	// catch (std::exception &e){
-	// 	std::cout << "\e[1;91mERROR: ";
-	// 	std::cout << std::endl << e.what() << std::endl << std::endl;
-	// 	std::cout << "\033[0;0m";
-	// }
+	std::cout << "\e[1;96m//////ROBOT//////\033[0;0m" << std::endl;
+	try{
+		std::cout << "\033[0;1m" << std::endl;
+		Bureaucrat mob("Pussy", 72);
+		Bureaucrat psc("Shrink", 45);
+		RobotomyRequestForm patient("Anthony Soprano");
+		std::cout << patient << std::endl;
+		mob.signAForm(patient);
+		std::cout <<  patient << std::endl;
+		patient.execute(psc);
+		std::cout << "\033[0;0m";
+		std::cout << "\033[0;1m" << std::endl;
+	}
+	catch (std::exception &e){
+		std::cout << "\e[1;91mERROR: ";
+		std::cout << std::endl << e.what() << std::endl << std::endl;
+		std::cout << "\033[0;0m";
+	}
+	std::cout << "\e[1;96m//////ROBOT 2//////\033[0;0m" << std::endl;
+	try{
+		std::cout << "\033[0;1m" << std::endl;
+		Bureaucrat mob2("Pussy", 72);
+		Bureaucrat psc2("Shrink", 46);
+		RobotomyRequestForm patient2("Anthony Soprano");
+		std::cout << patient2 << std::endl;
+		mob2.signAForm(patient2);
+		std::cout <<  patient2 << std::endl;
+		patient2.execute(psc2);
+		std::cout << "\033[0;0m";
+		std::cout << "\033[0;1m" << std::endl;
+	}
+	catch (std::exception &e){
+		std::cout << "\e[1;91mERROR: ";
+		std::cout << std::endl << e.what() << std::endl << std::endl;
+		std::cout << "\033[0;0m";
+	}
+	std::cout << "\e[1;96m//////ROBOT 2//////\033[0;0m" << std::endl;
+	try{
+		std::cout << "\033[0;1m" << std::endl;
+		Bureaucrat mob3("Pussy", 73);
+		Bureaucrat psc3("Shrink", 46);
+		RobotomyRequestForm patient3("Anthony Soprano");
+		std::cout << patient3 << std::endl;
+		mob3.signAForm(patient3);
+		patient3.execute(psc3);
+		std::cout <<  patient3 << std::endl;
+		std::cout << "\033[0;0m";
+		std::cout << "\033[0;1m" << std::endl;
+	}
+	catch (std::exception &e){
+		std::cout << "\e[1;91mERROR: ";
+		std::cout << std::endl << e.what() << std::endl << std::endl;
+		std::cout << "\033[0;0m";
+	}
 	return 0;
 }
