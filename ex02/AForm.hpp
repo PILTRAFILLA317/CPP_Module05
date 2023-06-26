@@ -23,12 +23,13 @@ class AForm
 		AForm &operator=(const AForm &copy);
 
 		std::string		getName() const;
-		virtual bool	getSigned() const = 0;
+		bool			getSigned() const;
 		int				getGradeToSign() const;
 		int				getGradeToExecute() const;
 		bool			getSign() const;
 
 		void			beSigned(Bureaucrat &bureaucrat);
+		virtual void	execute(Bureaucrat const &executor) const = 0;
 
 		class GradeTooHighException : public std::exception
 		{

@@ -5,44 +5,44 @@
 #include "RobotomyRequestForm.hpp"
 
 int main(){
-	// std::cout << "\e[1;96m//////FIRST TRY//////\033[0;0m" << std::endl;
-	// try{
-	// 	std::cout << "\033[0;1m" << std::endl;
-	// 	Bureaucrat sign("Jose", 25);
-	// 	Bureaucrat exec("POTU", 5);
-	// 	PresidentialPardonForm didit("Joxe Mari");
-	// 	std::cout << didit << std::endl;
-	// 	didit.signForm(sign);
-	// 	std::cout << didit << std::endl;
-	// 	didit.execute(exec);
-	// 	std::cout << "\033[0;0m";
-	// 	std::cout << "\033[0;1m" << std::endl;
-	// }
-	// catch (std::exception &e){
-	// 	std::cout << "\e[1;91mERROR: ";
-	// 	std::cout << std::endl << e.what() << std::endl << std::endl;
-	// 	std::cout << "\033[0;0m";
-	// }
-	// std::cout << std::endl;
-	// std::cout << "\e[1;96m//////SECOND TRY//////\033[0;0m" << std::endl;
-	// try{
-	// 	std::cout << "\033[0;1m" << std::endl;
-	// 	Bureaucrat sign2("Jose", 24);
-	// 	Bureaucrat exec2("POTU", 5);
-	// 	PresidentialPardonForm didit2("Joxe Mari");
-	// 	std::cout << didit2 << std::endl;
-	// 	didit2.signForm(sign2);
-	// 	std::cout << didit2 << std::endl;
-	// 	didit2.execute(exec2);
-	// 	std::cout << "\033[0;0m";
-	// 	std::cout << "\033[0;1m" << std::endl;
-	// }
-	// catch (std::exception &e){
-	// 	std::cout << "\e[1;91mERROR: ";
-	// 	std::cout << std::endl << e.what() << std::endl << std::endl;
-	// 	std::cout << "\033[0;0m";
-	// }
-	// std::cout << std::endl;
+	std::cout << "\e[1;96m//////PRESI 1//////\033[0;0m" << std::endl;
+	try{
+		std::cout << "\033[0;1m" << std::endl;
+		Bureaucrat sign("Jose", 25);
+		Bureaucrat exec("POTU", 5);
+		PresidentialPardonForm didit("Joxe Mari");
+		std::cout << didit << std::endl;
+		sign.signAForm(didit);
+		std::cout << didit << std::endl;
+		didit.execute(exec);
+		std::cout << "\033[0;0m";
+		std::cout << "\033[0;1m" << std::endl;
+	}
+	catch (std::exception &e){
+		std::cout << "\e[1;91mERROR: ";
+		std::cout << std::endl << e.what() << std::endl << std::endl;
+		std::cout << "\033[0;0m";
+	}
+	std::cout << std::endl;
+	std::cout << "\e[1;96m//////PRESI 2//////\033[0;0m" << std::endl;
+	try{
+		std::cout << "\033[0;1m" << std::endl;
+		Bureaucrat sign2("Jose", 26);
+		Bureaucrat exec2("POTU", 5);
+		PresidentialPardonForm didit2("Joxe Mari");
+		std::cout << didit2 << std::endl;
+		sign2.signAForm(didit2);
+		std::cout << didit2 << std::endl;
+		didit2.execute(exec2);
+		std::cout << "\033[0;0m";
+		std::cout << "\033[0;1m" << std::endl;
+	}
+	catch (std::exception &e){
+		std::cout << "\e[1;91mERROR: ";
+		std::cout << std::endl << e.what() << std::endl << std::endl;
+		std::cout << "\033[0;0m";
+	}
+	std::cout << std::endl;
 	std::cout << "\e[1;96m//////SHRUBBERY 1//////\033[0;0m" << std::endl;
 	try{
 		std::cout << "\033[0;1m" << std::endl;
@@ -97,7 +97,7 @@ int main(){
 		std::cout << std::endl << e.what() << std::endl << std::endl;
 		std::cout << "\033[0;0m";
 	}
-	std::cout << "\e[1;96m//////ROBOT//////\033[0;0m" << std::endl;
+	std::cout << "\e[1;96m//////ROBOT 1//////\033[0;0m" << std::endl;
 	try{
 		std::cout << "\033[0;1m" << std::endl;
 		Bureaucrat mob("Pussy", 72);
@@ -150,6 +150,13 @@ int main(){
 		std::cout << "\e[1;91mERROR: ";
 		std::cout << std::endl << e.what() << std::endl << std::endl;
 		std::cout << "\033[0;0m";
+	}
+	std::cout << "\e[1;96m//////////////////////////////////////////\033[0;0m" << std::endl << std::endl;
+	{
+		Bureaucrat test("Myke", 1);
+		ShrubberyCreationForm test2("la declaracion de la renta");
+		test.signAForm(test2);
+		test.executeAForm(test2);
 	}
 	return 0;
 }
