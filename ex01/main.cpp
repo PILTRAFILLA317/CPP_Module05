@@ -82,16 +82,6 @@ int main(){
 		std::cout << e.what() << std::endl;
 	}
 	std::cout << std::endl;
-	std::cout << "\e[1;91m-----------THIS BUREAUCRAT SHOUDL DISPLAY A GRADE TO LOW ERROR-----------\033[0;0m" << std::endl;
-	std::cout << std::endl;
-	try{
-		Bureaucrat error2("URDULIZ", 1);
-		Form	inutil("Estudiante de ADE", 333, 333);
-	}
-	catch (std::exception &e){
-		std::cout << e.what() << std::endl;
-	}
-	std::cout << std::endl;
 	std::cout << "\e[1;91m-----------THIS FORM SHOUDL DISPLAY A GRADE TO HIGH ERROR-----------\033[0;0m" << std::endl;
 	std::cout << std::endl;
 	try{

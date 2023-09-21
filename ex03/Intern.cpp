@@ -71,10 +71,7 @@ AForm* Intern::makeForm(std::string name, std::string target) const
 		std::cout << "Intern creates " << form->getName() << std::endl;
 		return form;
 	}
-	else
-	{
-		throw Intern::InvalidFormException();
-	}
+	throw Intern::InvalidFormException();
 }
 
 const char *Intern::InvalidFormException::what() const throw()
